@@ -1,11 +1,11 @@
-'''
+"""
 #class constructor
 class person:
     def __init__(self,pe,va,uy):
         self.n = pe
         self.a = va
         self.h = uy
-'''
+"""
 
 '''
 #class methods
@@ -30,7 +30,7 @@ class person:
 class clas_alpha:
     a=10
     def func(self):
-        for i in range(1,11):
+        for missing in range(1,11):
             print('finish')
 ob=clas_alpha()
 ob.func()
@@ -46,15 +46,15 @@ print('total valuse is :',value)
 # class Method_overloading:
 #     def func(self, *args):
 #         sum = 0
-#         for i in args:
-#             sum += i
+#         for missing in args:
+#             sum += missing
 #         print('the sum is : ', sum)
 #
 #
-# obj = Method_overloading()
-# obj.func(10, 20, 1)
-# obj.func(100000000000,21)
-# obj.func(1,2,4,5,2,3)
+# quiz = Method_overloading()
+# quiz.func(10, 20, 1)
+# quiz.func(100000000000,21)
+# quiz.func(1,2,4,5,2,3)
 
 
 '''OPERATOR OVERLOADING'''
@@ -73,13 +73,12 @@ print('total valuse is :',value)
 #         return self.a + other.a
 #
 #
-# obj = Operator_Overloading(222)
+# quiz = Operator_Overloading(222)
 # obj1 = Operator_Overloading(2)
 #
-# print(obj + obj1)
+# print(quiz + obj1)
 
 '''METHOD OVERRIDING'''
-
 
 # class student:
 #     def project(self):
@@ -122,16 +121,12 @@ class MyDecorator:
     def __init__(self, ref):
         self.ref = ref
 
-
     def __call__(self, *args):
         return self.ref(*args).upper()
 
 
-
-
 @MyDecorator
 def Myfunction(str1, str2):
-
     return f'this is {str1}  {str2}'
 
 
